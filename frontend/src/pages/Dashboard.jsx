@@ -267,7 +267,7 @@ export default function Dashboard({ user }) {
                 style={{ paddingLeft: '38px', fontSize: '0.9rem', padding: '10px 10px 10px 38px' }}
               />
             </div>
-
+            
             {/* Status Filter buttons */}
             <div style={{ display: 'flex', gap: '6px', overflowX: 'auto', paddingBottom: '4px' }}>
               {['ALL', 'PENDING', 'IN_PROGRESS', 'COMPLETED'].map((status) => (
@@ -281,7 +281,7 @@ export default function Dashboard({ user }) {
                     fontWeight: '600',
                     cursor: 'pointer',
                     background: statusFilter === status ? 'var(--primary)' : 'rgba(255,255,255,0.03)',
-                    color: statusFilter === status ? 'white' : 'var(--text-secondary)',
+                    color: statusFilter === status ? 'var(--bg-deep)' : 'var(--text-secondary)',
                     border: statusFilter === status ? 'none' : '1px solid var(--border)',
                     transition: 'all 0.2s ease',
                     whiteSpace: 'nowrap'

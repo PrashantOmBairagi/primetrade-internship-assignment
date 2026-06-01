@@ -1,5 +1,13 @@
 # PrimeTrade Frontend (React & Vite)
 
+[![Vercel](https://img.shields.io/badge/Vercel-Live%20Demo-black?style=for-the-badge&logo=vercel)](https://primetrade-internship-assignment.vercel.app)
+
+---
+
+🚀 **Live Production Link:** [primetrade-internship-assignment.vercel.app](https://primetrade-internship-assignment.vercel.app)
+
+---
+
 This is the interactive frontend portal built using **React.js**, **Vite**, and **Vanilla CSS** (Cyberpunk/Glassmorphic styling).
 
 ## Key Features Built:

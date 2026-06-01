@@ -4,6 +4,14 @@
 [![React](https://img.shields.io/badge/React-18.3.1-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql)](https://www.mysql.com/)
 [![Vite](https://img.shields.io/badge/Vite-5.2-purple?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![Vercel](https://img.shields.io/badge/Vercel-Live%20Demo-black?style=for-the-badge&logo=vercel)](https://primetrade-internship-assignment.vercel.app)
+
+---
+
+### 🌐 Live Production Site
+🚀 **Access Deployed Frontend:** [👉 primetrade-internship-assignment.vercel.app](https://primetrade-internship-assignment.vercel.app)
+
+---
 
 Welcome to the **PrimeTrade assignment repository**! This is an authentic, structured, and premium implementation of a secure REST API with Role-Based Access Controls (RBAC) powered by a high-aesthetic, glassmorphic React SPA interface.
 

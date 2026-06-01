@@ -32,7 +32,7 @@ export default function Navbar({ user, onLogout }) {
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
         }}>
-          PRIMETRADE
+          PRIMETRADE TASK MANAGER
         </span>
       </div>
 
