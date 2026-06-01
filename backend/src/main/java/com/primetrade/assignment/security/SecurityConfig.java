@@ -86,7 +86,9 @@ public class SecurityConfig {
                 "http://localhost:3000",
                 "http://127.0.0.1:5173",
                 "https://primetrade-internship-assignment2.vercel.app",
-                "https://primetrade-internship-assignment2.vercel.app/"
+                "https://primetrade-internship-assignment2.vercel.app/",
+                "https://primetrade-internship-assignment.vercel.app",
+                "https://primetrade-internship-assignment.vercel.app/"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
         configuration.setAllowedHeaders(List.of("Authorization", "Content-Type", "Cache-Control"));
