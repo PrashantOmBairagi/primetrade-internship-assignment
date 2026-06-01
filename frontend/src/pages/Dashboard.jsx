@@ -152,10 +152,33 @@ export default function Dashboard({ user }) {
               grid-template-columns: 350px 1fr !important;
             }
           }
+          @media (max-width: 899px) {
+            .sidebar-form {
+              position: static !important; /* Disable sticky when stacked */
+            }
+          }
+          @media (max-width: 768px) {
+            .filter-bar {
+              flex-direction: column !important;
+              align-items: stretch !important;
+              gap: 12px !important;
+              padding: 16px !important;
+            }
+            .search-input-wrapper {
+              flex: 1 1 100% !important;
+              width: 100% !important;
+            }
+            .filter-buttons {
+              justify-content: flex-start !important;
+              width: 100% !important;
+              padding-bottom: 6px !important;
+              scrollbar-width: thin !important;
+            }
+          }
         `}</style>
 
         {/* Sidebar / Left Column: Task Creation & Edit Form */}
-        <div className="glass-panel" style={{ padding: '28px', position: 'sticky', top: '20px' }}>
+        <div className="glass-panel sidebar-form" style={{ padding: '28px', position: 'sticky', top: '20px' }}>
           <h3 style={{
             fontSize: '1.25rem',
             fontWeight: '800',
@@ -241,7 +264,7 @@ export default function Dashboard({ user }) {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
           
           {/* Filtering and Query Bar */}
-          <div className="glass-panel" style={{
+          <div className="glass-panel filter-bar" style={{
             padding: '20px',
             display: 'flex',
             flexWrap: 'wrap',
@@ -250,7 +273,7 @@ export default function Dashboard({ user }) {
             justifyContent: 'space-between'
           }}>
             {/* Search */}
-            <div style={{ position: 'relative', flex: '1 1 280px' }}>
+            <div className="search-input-wrapper" style={{ position: 'relative', flex: '1 1 280px' }}>
               <Search size={18} style={{
                 position: 'absolute',
                 left: '12px',
@@ -269,7 +292,7 @@ export default function Dashboard({ user }) {
             </div>
             
             {/* Status Filter buttons */}
-            <div style={{ display: 'flex', gap: '6px', overflowX: 'auto', paddingBottom: '4px' }}>
+            <div className="filter-buttons" style={{ display: 'flex', gap: '6px', overflowX: 'auto', paddingBottom: '4px' }}>
               {['ALL', 'PENDING', 'IN_PROGRESS', 'COMPLETED'].map((status) => (
                 <button
                   key={status}

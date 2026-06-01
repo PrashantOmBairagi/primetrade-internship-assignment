@@ -3,7 +3,7 @@ import { LogOut, Shield, Mail, Layers } from 'lucide-react';
 
 export default function Navbar({ user, onLogout }) {
   return (
-    <nav className="glass-panel" style={{
+    <nav className="glass-panel navbar-container" style={{
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -12,6 +12,30 @@ export default function Navbar({ user, onLogout }) {
       marginBottom: '40px',
       borderTop: 'none'
     }}>
+      <style>{`
+        @media (max-width: 768px) {
+          .navbar-container {
+            flex-direction: column !important;
+            gap: 14px !important;
+            padding: 16px !important;
+            border-radius: 0 0 12px 12px !important;
+            margin-bottom: 24px !important;
+            align-items: center !important;
+            text-align: center !important;
+          }
+          .navbar-user-section {
+            flex-direction: column !important;
+            gap: 12px !important;
+            width: 100% !important;
+            align-items: center !important;
+          }
+          .navbar-user-details {
+            flex-direction: column !important;
+            gap: 8px !important;
+            align-items: center !important;
+          }
+        }
+      `}</style>
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         <div style={{
           background: 'linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%)',
@@ -37,8 +61,8 @@ export default function Navbar({ user, onLogout }) {
       </div>
 
       {user && (
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div className="navbar-user-section" style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <div className="navbar-user-details" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <div style={{
               background: 'rgba(255, 255, 255, 0.04)',
               border: '1px solid var(--border)',
