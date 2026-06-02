@@ -1,7 +1,9 @@
 package com.primetrade.assignment.auth;
 
 import com.primetrade.assignment.enumeration.Role;
+import lombok.Data;
 
+@Data
 public class AuthResponse {
 
     private String token;
@@ -17,27 +19,4 @@ public class AuthResponse {
         this.role = role;
     }
 
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
 }
